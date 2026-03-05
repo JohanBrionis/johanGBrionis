@@ -1,0 +1,28 @@
+RF1:
+Apertura de Cuenta:
+El sistema debe permitir crear una cuenta con un saldo inicial de $0 o con un monto específico proporcionado por el usuario.
+
+RF2:
+Depósito de Dinero:
+El sistema debe permitir aumentar el saldo de la cuenta mediante consignaciones.
+
+RF3:
+Retiro de Dinero:
+El sistema debe permitir disminuir el saldo, validando que la cuenta tenga fondos suficientes para la transacción.
+
+RF4:
+Consulta de Saldo:
+El sistema debe mostrar el estado actual del dinero disponible en la cuenta en cualquier momento.
+
+
+_______________________________________________________
+|                      Cuenta                         |
+|_____________________________________________________|
+| - saldo: double                                     |
+|_____________________________________________________|
+| + Cuenta()                                          |
+| + Cuenta(saldoInicial: double)                      |
+| + depositar(monto: double): void                    |
+| + retirar(monto: double): boolean                   |
+| + getSaldo(): double                                |
+|_____________________________________________________|
